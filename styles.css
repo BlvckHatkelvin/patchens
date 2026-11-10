@@ -296,3 +296,30 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--olive); outline
   .enquire { padding-bottom: 210px; }
   footer { column-gap: 10px; font-size: 6px; }
 }
+
+/* Mobile menu card spacing fix */
+@media (max-width: 760px) {
+  .food-options .package-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    height: auto;
+  }
+
+  .food-options .package-card p {
+    max-width: none;
+    margin-bottom: 0;
+  }
+
+  .food-options .package-card > a {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 18px;
+    padding-bottom: 9px;
+    flex-shrink: 0;
+  }
+}
+
